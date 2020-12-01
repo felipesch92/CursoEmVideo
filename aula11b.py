@@ -10,3 +10,4 @@ cores = {'limpa': '\033[m',
          'pretoebranco': '\033[7:30m'}
 print('Olá, prazer em te conhecer {}{}{}!!!'.format(cores['pretoebranco'], nome, cores['limpa']))
 print(cores)
+print('Hello World!')
