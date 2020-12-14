@@ -8,3 +8,4 @@ while True:
     c += 1
     s += n
 print('A soma vale {}'.format(s))
+print(f'A soma vale {s}')
