@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Script JavaScript</title>
+    <style>
+        body{
+            background-color: #e7f1aa;
+        }
+        h1{
+            color: #fa4e82;
+        }
+        p{
+            background-color: #8a2be2;
+            color: #fff8dc;
+            font-size: 25pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var n1 = window.prompt('Número 1:')
+        var n2 = window.prompt('Número 2:')
+        var soma = parseInt(n1) + parseInt(n2)
+        //window.alert('A soma de '+n1+' + '+n2+' é igual a: '+ soma)
+        window.alert(`A soma de ${n1} + ${n2} é igual a: ${soma}`)
+    </script>
+</body>
+</html>
