@@ -17,10 +17,13 @@
     <h1>Iniciando os estudos com DOM</h1>
     <p>Aprendendo usar <strong>DOM</strong> em Javascript</p>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
+    <div class="msg">Clique em mim</div>
     <script>
-        window.document.write('Olá, mundo!')
-        window.document.write(document.charset + document.URL)
+        var p = window.document.getElementsByTagName('p');
+        var d = window.document.querySelector('div.msg')
+        window.document.write(d.innerText);
+        d.style.backgroundColor = 'green';
+        d.innerText = 'Felipe Schmaedecke'
     </script>
 </body>
 </html>

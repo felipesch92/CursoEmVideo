@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        div#contador {
+            font: normal 40pt Arial;
+            width: 200px;
+            height: 200px;
+            background-color: #367b85;
+            line-height: 200px;
+            text-align: center;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Condições JavaScript</h1>
+    <div id="contador" onclick="clicar()">
+        1
+    </div>
+    <script>
+        var a = document.getElementById("contador")
+        function clicar() {
+            var n = a.innerText
+            n = Number(n) + 1
+            if (Number(n) % 2 == 0) {
+                a.style.backgroundColor = "purple"
+            } else{
+                a.style.backgroundColor = "#367b85"
+            }
+            a.innerText = n
+        }
+    </script>
+</body>
+</html>

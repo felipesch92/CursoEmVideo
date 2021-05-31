@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual pais você vive?</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+            background-color: #d1a0ff;
+        }
+        div{
+            width: 400px;
+            height: 100px;
+            font: normal 20pt Arial;
+            background-color: #5f9ea0;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Em qual pais você vive?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="res"></div>
+    <script>
+        function enviar() {
+            var pais = document.querySelector("#txtpais")
+            var res = document.querySelector("#res")
+            res.innerHTML = `Você vive no ${pais.value}, portanto é `
+            if (pais.value == "Brasil"){
+                res.innerHTML += "brasileiro!"
+            }else{
+                res.innerHTML += "estrangeiro!"
+            }
+        }
+    </script>
+</body>
+</html>
