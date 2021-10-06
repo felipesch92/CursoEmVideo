@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando imagem dinamicamente!</title>
+</head>
+<body>
+    <h1>Vamos Adicionar uma imagem dinamicamente aqui</h1>
+    <input type="button" value="Criar Imagem" onclick="carregar()"> <br />
+    <script>
+        function carregar() {
+            var img = document.createElement("img")
+            img.src = "img_faxineira.jpg"
+            document.body.appendChild(img)
+        }
+    </script>
+</body>
+</html>

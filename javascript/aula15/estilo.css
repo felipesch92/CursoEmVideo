@@ -1,0 +1,25 @@
+body {
+    background-color: #6bc2fc;
+    text-align: center;
+    margin: auto;
+    font: normal 15pt arial;
+}
+
+#principal {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgb(27, 27, 63);
+}
+
+#resultado {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px teal;
+    display: none;
+}

@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(123, 189, 243);
+    font: Arial 15pt normal;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    margin: auto;
+}
+
+div#principal {
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(75, 75, 75, 0.473);
+    text-align: center;
+    padding: 10px;
+}
